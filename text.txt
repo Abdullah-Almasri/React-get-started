@@ -1,0 +1,17 @@
+Traditional explanaiton about components in React
+
+Class Component - Statefull Component
+- A class component requires you to extend from React.Component and create a render function which returns a React element.
+- It must have the render() method returning JSX
+- Also known as Stateful components because they implement logic and state.
+-React  lifecycle methods can be used inside class components (for example, componentDidMount, componentDidUpdate, componentWillUnmount).
+
+Function Component - Stateless Component
+- A functional component is just a plain JavaScript function that accepts props as an argument and returns a React element.
+- There is no Render method used in functional components.
+- Also known as Stateless components as they simply accept data abd display them in some form, that they are mainly responsible for rendering UI.
+- React lifecycle methods (for example, componentDidMount) cannot be used in functional components.
+
+
+
+Present explanaiton about components in React

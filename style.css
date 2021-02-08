@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-size: cover;
+  color: yellow;
+  font-family: Russo One;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+/*---------- navbar styling ----------*/
+.navbar {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  padding: 0 1rem;
+}
+.navbar h2 {
+  color: yellow;
+}
+.navbar .navlinks {
+  grid-column: 3/4;
+}
+.navbar .navlinks a {
+  color: yellow;
+  font-size: 2rem;
+  margin-left: 2rem;
+  text-decoration: none;
+}
+.navbar .navlinks a:hover {
+  color: rgba(255, 255, 0, 0.7);
+}
+/*---------- home styling ----------*/
+.home {
+  display: flex;
+  justify-content: center;
+  padding: 0 2rem;
+}
+.home h1 {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  margin-top: 20%;
+  padding: 1rem;
+}
+/*---------- about styling ----------*/
+.about {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  font-size: 1.2rem;
+  margin: 4rem auto;
+  padding: 1rem;
+  width: 60%;
+}
+/*---------- planets styling ----------*/
+.planets {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  margin: 2rem auto 0;
+  width: 60%;
+}
+/*---------- planet styling ----------*/
+.planet {
+  background: rgba(0, 0, 0);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  transition: 0.3s;
+}
+.planet:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.planet .container {
+  padding: 2px 16px;
+}
+.planet img {
+  width: 100%;
+}
+.planet .name {
+  border-bottom: 1px solid yellow;
+}
+.planet i {
+  font-size: 0.8rem;
+}
+/*---------- species styling ----------*/
+.species {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  margin: 2rem auto 0;
+  width: 60%;
+}
+/*---------- one-species styling ----------*/
+.one-species {
+  background: rgba(0, 0, 0);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  transition: 0.3s;
+}
+.one-species:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.one-species .container {
+  padding: 2px 16px;
+}
+.one-species img {
+  width: 100%;
+}
+.one-species .name {
+  border-bottom: 1px solid yellow;
+}
+.one-species i {
+  font-size: 0.8rem;
+}
+.hidden {
+  display: none !important;
+}

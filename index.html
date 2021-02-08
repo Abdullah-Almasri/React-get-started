@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-router-dom@5.0.0/umd/react-router-dom.min.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Denna länk ger oss tillgång till react -->
+    <script
+      src="https://unpkg.com/react@17/umd/react.development.js"
+      crossorigin
+    ></script>
+    <!-- Denna länk ger oss möjligheten att interagera med DOM:en via react -->
+    <script
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <!-- Denna länk ger oss tillgång till babel och alla dess funktioner -->
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css">
+    <title>Intro to React</title>
+  </head>
+  <body>
+    <!-- Det är denna div som react kommer att injicera alla våra komponenter som vi skapar -->
     <div id="root"></div>
+    <script src="starwarsData.js"></script>
     <script type="text/babel" src="main.js"></script>
-</body>
+  </body>
 </html>
